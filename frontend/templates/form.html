@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Unos računa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Unos računa</h2>
+    <form method="POST">
+        <input type="text" name="customer_name" placeholder="Ime kupca" required><br>
+        <input type="date" name="date" required><br>
+        <input type="text" name="items" placeholder="Stavke (odvojene zarezom)" required><br>
+        <input type="number" step="0.01" name="total" placeholder="Ukupno" required><br>
+        <button type="submit">Dodaj račun</button>
+    </form>
+</body>
+</html>
+
