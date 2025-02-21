@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask import Flask, flash, redirect, render_template, request, session, url_for
 import requests
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
-BACKEND_URL = "http://127.0.0.1:8080"
+BACKEND_URL = "http://127.0.0.1:9000"
 
 
 @app.route("/")
